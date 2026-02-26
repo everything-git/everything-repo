@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$EVERYTHING — Why settle for something?</title>
+    <meta name="description" content="$EVERYTHING is the meme coin for people who want it all. No tax. No bs. Just vibes.">
+    <meta property="og:title" content="$EVERYTHING">
+    <meta property="og:description" content="Why settle for something when you can have everything?">
+    <meta property="og:image" content="assets/banner.svg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="$EVERYTHING">
+    <meta name="twitter:description" content="Why settle for something when you can have everything?">
+    <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Particle canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="../assets/logo.svg" alt="$EVERYTHING" width="40" height="40">
+                <span>$EVERYTHING</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#community">Community</a>
+                <a href="#" class="btn btn-primary btn-sm">Buy Now</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🔥 NOW LIVE ON SOLANA</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">$EVERYTHING</span>
+            </h1>
+            <p class="hero-subtitle">Why settle for something when you can have <strong>everything</strong>?</p>
+            <p class="hero-description">
+                The meme coin that represents it all. No tax. No team tokens. 
+                No BS. Just pure, unfiltered <em>everything</em>.
+            </p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary btn-lg">
+                    <span>🚀</span> Buy $EVERYTHING
+                </a>
+                <a href="#" class="btn btn-outline btn-lg">
+                    📊 View Chart
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value" id="holders">0</span>
+                    <span class="stat-label">Holders</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">0%</span>
+                    <span class="stat-label">Tax</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">🔥</span>
+                    <span class="stat-label">LP Burned</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">✅</span>
+                    <span class="stat-label">Renounced</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">What is <span class="gradient-text">$EVERYTHING</span>?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🌍</div>
+                    <h3>Everything, Literally</h3>
+                    <p>Other coins represent one thing. A dog, a cat, a frog. We represent EVERYTHING. Why limit yourself?</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🔒</div>
+                    <h3>Fully Secure</h3>
+                    <p>Contract renounced. Liquidity burned. There is no rug to pull. Sleep easy, fren.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">💎</div>
+                    <h3>Community First</h3>
+                    <p>100% fair launch. No presale. No team tokens. This is by the people, for the people.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">♾️</div>
+                    <h3>Infinite Memes</h3>
+                    <p>When your coin is about everything, the meme potential is literally infinite. Think about it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section class="section section-dark" id="tokenomics">
+        <div class="container">
+            <h2 class="section-title">Tokenomics</h2>
+            <p class="section-subtitle">Simple. Clean. No funny business.</p>
+            <div class="tokenomics-grid">
+                <div class="token-card">
+                    <div class="token-number">999,999,999,999</div>
+                    <div class="token-label">Total Supply</div>
+                </div>
+                <div class="token-card">
+                    <div class="token-number">0 / 0</div>
+                    <div class="token-label">Buy / Sell Tax</div>
+                </div>
+                <div class="token-card">
+                    <div class="token-number">100%</div>
+                    <div class="token-label">Fair Launch</div>
+                </div>
+                <div class="token-card highlight">
+                    <div class="token-number">🔥</div>
+                    <div class="token-label">Liquidity Burned Forever</div>
+                </div>
+            </div>
+            <div class="contract-address">
+                <span class="contract-label">Contract Address:</span>
+                <code class="contract-code" id="contractAddress">EVERY...THING</code>
+                <button class="btn-copy" id="copyBtn" title="Copy address">📋</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="section" id="roadmap">
+        <div class="container">
+            <h2 class="section-title">Roadmap</h2>
+            <p class="section-subtitle">From something to everything.</p>
+            <div class="roadmap">
+                <div class="roadmap-item completed">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <h3>Phase 1 — "Something"</h3>
+                        <ul>
+                            <li class="done">Token Launch</li>
+                            <li class="done">Website Live</li>
+                            <li class="done">Social Channels</li>
+                            <li class="done">CoinGecko & CMC</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item active">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <h3>Phase 2 — "More Things"</h3>
+                        <ul>
+                            <li class="done">1,000+ Holders</li>
+                            <li>CEX Listings</li>
+                            <li>Partnerships</li>
+                            <li>Merch Store</li>
+                            <li>NFT Collection</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <h3>Phase 3 — "Most Things"</h3>
+                        <ul>
+                            <li>10,000+ Holders</li>
+                            <li>Tier 1 CEX</li>
+                            <li>DAO Governance</li>
+                            <li>Community Grants</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-content">
+                        <h3>Phase 4 — "EVERYTHING"</h3>
+                        <ul>
+                            <li>100,000+ Holders</li>
+                            <li>Global Recognition</li>
+                            <li>Everything Ecosystem</li>
+                            <li>Literally Everything</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="section section-dark" id="community">
+        <div class="container">
+            <h2 class="section-title">Join the <span class="gradient-text">Movement</span></h2>
+            <p class="section-subtitle">Become part of the everything community.</p>
+            <div class="community-grid">
+                <a href="https://twitter.com/everythingcoin" class="community-card" target="_blank" rel="noopener">
+                    <div class="community-icon">𝕏</div>
+                    <h3>Twitter</h3>
+                    <p>Follow for the latest updates and memes</p>
+                </a>
+                <a href="https://t.me/everythingcoin" class="community-card" target="_blank" rel="noopener">
+                    <div class="community-icon">✈️</div>
+                    <h3>Telegram</h3>
+                    <p>Chat with the community 24/7</p>
+                </a>
+                <a href="https://discord.gg/everythingcoin" class="community-card" target="_blank" rel="noopener">
+                    <div class="community-icon">🎮</div>
+                    <h3>Discord</h3>
+                    <p>Join our growing server</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/logo.svg" alt="$EVERYTHING" width="32" height="32">
+                    <span>$EVERYTHING</span>
+                </div>
+                <p class="footer-disclaimer">
+                    $EVERYTHING is a meme coin with no intrinsic value or expectation of financial return. 
+                    This is not financial advice. Always DYOR.
+                </p>
+                <p class="footer-copy">&copy; 2026 $EVERYTHING Community. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F7C948;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bannerBg)"/>
+  
+  <!-- Decorative grid lines -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.05">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+  
+  <!-- Accent line top -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accentGrad)"/>
+  
+  <!-- Logo circle -->
+  <circle cx="300" cy="315" r="140" fill="url(#accentGrad)" opacity="0.15"/>
+  <circle cx="300" cy="315" r="120" fill="url(#accentGrad)" filter="url(#glow)"/>
+  
+  <!-- E symbol in circle -->
+  <g transform="translate(300,315)" fill="#fff">
+    <rect x="-50" y="-60" width="16" height="120" rx="3"/>
+    <rect x="-50" y="-60" width="90" height="14" rx="3"/>
+    <rect x="-50" y="-7" width="75" height="14" rx="3"/>
+    <rect x="-50" y="46" width="90" height="14" rx="3"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="500" y="270" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" filter="url(#glow)">$EVERYTHING</text>
+  <text x="500" y="340" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#F7C948" opacity="0.9">Why settle for something when</text>
+  <text x="500" y="380" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#F7C948" opacity="0.9">you can have everything?</text>
+  
+  <!-- Social links -->
+  <text x="500" y="460" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#ffffff" opacity="0.5">everything.meme  •  @everythingcoin  •  t.me/everythingcoin</text>
+  
+  <!-- Bottom accent -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accentGrad)"/>
+  
+  <!-- Floating particles -->
+  <g fill="#F7C948" opacity="0.3">
+    <circle cx="150" cy="100" r="3"/>
+    <circle cx="900" cy="80" r="2"/>
+    <circle cx="1050" cy="200" r="4"/>
+    <circle cx="80" cy="500" r="2"/>
+    <circle cx="1100" cy="450" r="3"/>
+    <circle cx="700" cy="550" r="2"/>
+  </g>
+</svg>

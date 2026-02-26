@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F7C948;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bg)" filter="url(#shadow)"/>
+  
+  <!-- Inner ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#fff" stroke-width="4" opacity="0.3"/>
+  
+  <!-- Globe/Everything symbol - stylized E with infinity -->
+  <g transform="translate(256,256)" fill="#fff">
+    <!-- Large E -->
+    <rect x="-80" y="-90" width="24" height="180" rx="4"/>
+    <rect x="-80" y="-90" width="130" height="22" rx="4"/>
+    <rect x="-80" y="-11" width="110" height="22" rx="4"/>
+    <rect x="-80" y="68" width="130" height="22" rx="4"/>
+    
+    <!-- Infinity symbol next to E -->
+    <g transform="translate(95, 0)">
+      <path d="M0,0 C0,-30 30,-30 30,0 C30,30 60,30 60,0 C60,-30 30,-30 30,0 C30,30 0,30 0,0Z" 
+            fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+    </g>
+  </g>
+  
+  <!-- Shine overlay -->
+  <ellipse cx="200" cy="180" rx="120" ry="100" fill="url(#shine)" opacity="0.5"/>
+  
+  <!-- Small stars/sparkles -->
+  <g fill="#fff" opacity="0.8">
+    <polygon points="100,80 103,90 113,90 105,96 108,106 100,100 92,106 95,96 87,90 97,90" transform="scale(0.6)"/>
+    <polygon points="400,60 403,70 413,70 405,76 408,86 400,80 392,86 395,76 387,70 397,70" transform="scale(0.5)"/>
+    <polygon points="420,380 423,390 433,390 425,396 428,406 420,400 412,406 415,396 407,390 417,390" transform="scale(0.5)"/>
+  </g>
+</svg>
