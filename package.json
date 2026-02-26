@@ -1,0 +1,31 @@
+{
+  "name": "everything-coin",
+  "version": "1.0.0",
+  "description": "$EVERYTHING — Why settle for something when you can have everything?",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve website",
+    "build": "echo 'Static site — no build step needed'",
+    "lint": "echo 'No linter configured'",
+    "deploy": "echo 'Deploy to your preferred hosting provider'"
+  },
+  "keywords": [
+    "everything",
+    "meme",
+    "coin",
+    "crypto",
+    "solana",
+    "token",
+    "community"
+  ],
+  "author": "$EVERYTHING Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/everythingcoin/everything.git"
+  },
+  "homepage": "https://everything.meme",
+  "bugs": {
+    "url": "https://github.com/everythingcoin/everything/issues"
+  }
+}
